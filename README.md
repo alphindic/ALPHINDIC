@@ -4,6 +4,25 @@ npm 9+
 React 18
 Vite 5
 @vitejs/plugin-react 4
+name: Build ALPHINDIC
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm install
+      - run: npm run build
 
 
 
