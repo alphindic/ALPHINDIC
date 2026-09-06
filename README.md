@@ -1,5 +1,10 @@
 ## ALPHINDIC 👋
-\]
+Node.js 18+
+npm 9+
+React 18
+Vite 5
+@vitejs/plugin-react 4
+
 
 
 
